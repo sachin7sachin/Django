@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       body{
+        font-family: Arial, sans-serif;
+        background-color: #d0ced762;
+        color: #333;
+        padding: 0;
+    }
+    </style>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'css/all_chai.css' %}">
+    <link rel="stylesheet" href="{% static 'css/chai_details.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/chai_store.css' %}">
+
+
+
+</head>
+<body>
+    {% include "nav.html" %}
+    
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

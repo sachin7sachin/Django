@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<center><h1>Welcome to Chai Stores Details</h1></center>
+
+<div id="div">
+    <form method="POST">
+        {% csrf_token %}
+    
+        {{form.as_p}}
+        <button id="showStores" type="submit">Show Stores</button>
+    
+    </form>
+</div>
+
+{% if stores %}
+
+<div id="div_2">
+
+<h2 style="color: black;">Stores available</h2>
+<ul>
+{% for store in stores %}
+
+<li>{{store.name}} - {{store.location}}</li>
+
+{% endfor %}
+</ul>
+
+</div>
+
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+#container-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+
+    height: 50vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 20px;
+
+}
+
+#details_anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#back{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid black;
+
+
+}
+
+#chai-description{
+    margin: 30px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

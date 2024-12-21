@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Chai Details
+</h1>
+
+<div id="container-1">
+    <h3 id="chai-name">{{chai.name}}</h3>
+    <p id="chai-description">{{chai.description}}</p>
+    <a id="details_anchor" href="{% url 'all_chai' %}"><button id="back">Back</button></a>
+
+</div>
+
+
+{% endblock %}   

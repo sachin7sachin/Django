@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#div{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+#showStores{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    background-color: aquamarine;
+}
+
+#div_2{
+    width: 50%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
