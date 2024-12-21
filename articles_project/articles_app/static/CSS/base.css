@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Add some basic spacing for the whole page */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}

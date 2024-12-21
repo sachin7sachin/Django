@@ -1,0 +1,31 @@
+
+{% if request.path == "/about/" or request.path == "/contact/" or request.resolver_match.url_name == "task" %}
+<nav>
+    <a class="nav" href="{% url 'home' %}">Home</a>
+    <a class="nav" href="{% url 'about' %}">About</a>
+    <a class="nav" href="{% url 'contact' %}">Contact</a>
+
+</nav>
+
+
+
+{% else %}
+
+<nav>
+    <a class="nav" href="{% url 'home' %}">Home</a>
+    <a class="nav" href="{% url 'about' %}">About</a>
+    <a class="nav" href="{% url 'contact' %}">Contact</a>
+
+    <form action="" method="get">
+        {% if search %}
+            <input type="text" placeholder="search(Enter the title)" name="search" value="{{search}}">
+        {% else %}
+            <input type="text" placeholder="search(Enter the title)" name="search">
+        {% endif %}
+
+
+    </form>
+
+</nav>
+
+{% endif %}

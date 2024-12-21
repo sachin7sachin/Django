@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- <center><h1>Welcome to Home Page</h1></center> -->
+
+
+    {% if search %}
+
+    <h1>search result for "{{ search }}"</h1>
+
+{% else %}
+
+<center><h1>Welcome to Home Page</h1></center>
+
+    <h1>here are the all articles</h1>
+
+{% endif %}
+
+
+{% for i in dict %}
+<!-- <h1>{{forloop.counter}}. {{i.name}}</h1> -->
+<div class="home_div">
+    <center><h1><a  class="home_anchor" href="{% url 'task' i.id %}">Article {{forloop.counter}}. {{i.name}}</a></h1>
+    </center>
+    <center><p>{{i.description|truncatewords:15}}</p></center>
+</div>
+
+{% empty %}
+<h1>ooops... no results found</h1>
+
+{% endfor %}
+
+
+{% endblock %}

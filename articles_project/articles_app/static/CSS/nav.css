@@ -1,0 +1,23 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+form input {
+    padding: 5px;
+    margin-top: 10px;
+}

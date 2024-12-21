@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center><h1 class="task">{{task.name}}</h1></center>
+<center><p class="task">{{task.description}}</p>
+</center>
+<center><img src="https://media.licdn.com/dms/image/v2/C4E1BAQEGNewnWG9Bvw/company-background_10000/company-background_10000/0/1633750267935/bvdu_cover?e=2147483647&v=beta&t=L8kynfueiMK4kTaH3pPd7nBoGQw_DKyvqDjjR4DsVrc" height="300px" width="300px"></center>
+<center><button><a class="back" href="{% url 'home' %}">Back</a></button></center>
+{% endblock %}
