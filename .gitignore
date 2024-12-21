@@ -1,0 +1,13 @@
+#folders
+
+django_project_1/
+django_project_2/
+database/
+
+#virtual environment
+myenv/
+
+#files
+*.txt
+*.pdf
+
