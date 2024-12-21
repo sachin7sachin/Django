@@ -54,7 +54,7 @@ class chaiCertificate(models.Model):
     issued_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f"certificate for {self.name.chai}"
+        return f"certificate for {self.chai.name}"
     
 
     
