@@ -9,9 +9,6 @@ from django.contrib.auth import login
 
 # Create your views here.
 
-def tweet(request):
-  return render(request, "tweet.html")
-
 
 def tweet_list(request):
   tweets = Tweet.objects.all().order_by("created_at")
